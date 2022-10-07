@@ -1,0 +1,29 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\HomeController::index
+
+admin-page_show:
+    path: /admin
+    controller: App\Controller\AdminController::index
+
+admin-page_add:
+    path: /admin
+    controller: App\Controller\AdminController::edit
+
+admin-page_edit:
+    path: /admin
+    controller: App\Controller\AdminController::edit
+
+admin-page_remove:
+    path: /admin
+    controller: App\Controller\AdminController::remove
+
+graph-page:
+        path: /admin
+        controller: App\Controller\GraphController::index
+
+
